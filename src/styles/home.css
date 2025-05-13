@@ -1,0 +1,12 @@
+.home-title {
+  color: var(--color-gray-7);
+}
+
+.home-title b {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-main-purple);
+}
+
+.home-paragraph {
+  color: var(--color-gray-5);
+}

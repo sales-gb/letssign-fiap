@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetsSign - Assinatura de Documentos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/styles/main.css" />
+    <link rel="stylesheet" href="../src/styles/contrato-assinatura.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container-fluid">
+      <div class="title-container">
+        <a href="../index.html" class="back-btn">
+          <img
+            class="back-btn-icon"
+            src="../src/assets/icons/chevron-left.svg"
+            alt="voltar"
+          />
+          Voltar
+        </a>
+
+        <h2>Contrato.pdf</h2>
+
+        <div class="status-container">
+          <p class="status-item">
+            <img
+              class="status-icon"
+              src="../src/assets/icons/clock-7.svg"
+              alt="Relógio"
+            />
+            Aguardando
+          </p>
+
+          <p class="status-item">
+            <img
+              class="status-icon"
+              src="../src/assets/icons/users.svg"
+              alt="Usuários"
+            />
+            1 assinatura - 2 Aguardando
+          </p>
+        </div>
+      </div>
+
+      <div class="container-main">
+        <div class="documento rounded">
+          <div class="texto-contrato p-3 rounded">
+            <h5 class="mb-3"><strong>Compromisso do Apoio EnerLink</strong></h5>
+
+            <p>
+              Nossa missão é criar uma infraestrutura aberta de assinaturas que
+              empodere o mundo. Acreditamos que abertura e cooperação são
+              fundamentais para qualquer negócio.
+              <br />
+              <br />
+              Ao desenvolver uma solução de assinatura open source, queremos
+              levar esses valores ao ato mais essencial para empresas: assinar.
+              Assinaturas de documentos devem ser abertas e transparentes como
+              todo produto baseado em confiança.
+              <br />
+              <br />
+              Buscamos merecer essa confiança permitindo que todos possam
+              hospedar o EnerLink e explorar seu funcionamento. Compartilhamos
+              nosso código, conhecimento e progresso abertamente enquanto
+              criamos o EnerLink.
+              <br />
+              <br />
+              Produtos excepcionais são fruto de comunidades excepcionais.
+              Trabalhamos para criar um ambiente inclusivo e criativo, aberto a
+              todos que apoiem nossa missão.
+              <br />
+              <br />
+              Valorizamos todas as contribuições da comunidade, mesmo sem
+              aplicá-las integralmente.
+              <br />
+              <br />
+              Estamos construindo a nova geração de software de confiança e
+              comunidade, como deve ser:
+              <br />
+              <br />
+              belo e aberto a todos.
+            </p>
+          </div>
+
+          <div class="assinatura-preview mt-4">Gabriel Sales</div>
+          <p class="mt-2 mb-0">
+            <strong>Mark Zuckerberg & Elon Musk</strong><br />Co-Founder & CEO
+            at EnerLink
+          </p>
+        </div>
+
+        <div class="form-assinatura rounded">
+          <div class="top-form">
+            <h5>Assinar documento</h5>
+            <p class="text-muted">
+              Antes de prosseguir, revise todas as etapas
+            </p>
+
+            <label for="nomeCompleto" class="form-label mt-3"
+              >Nome completo</label
+            >
+            <input
+              type="text"
+              id="nomeCompleto"
+              class="form-control"
+              value="Gabriel Sales Bezerra"
+            />
+
+            <label for="signature" class="form-label mt-4">Assinatura</label>
+            <div
+              class="assinatura-preview bg-light p-2 rounded"
+              id="signaturePreview"
+            >
+              Gabriel Sales
+            </div>
+
+            <input
+              type="text"
+              id="signature"
+              class="form-control assinatura-input"
+              placeholder="Escreva ou desenhe seu nome"
+              value="Gabriel Sales"
+              oninput="updateSignature()"
+            />
+          </div>
+
+          <div class="bottom-form">
+            <div
+              class="d-flex justify-content-center gap-2 align-items-center mt-5"
+            >
+              <button class="btn btn-light btn-voltar">Voltar</button>
+              <button class="btn btn-primary">Continuar</button>
+            </div>
+
+            <div
+              class="pagination-custom mt-4 d-flex justify-content-center gap-2"
+            >
+              <span
+                class="active bg-primary rounded-circle"
+                style="width: 10px; height: 10px; display: inline-block"
+              ></span>
+              <span
+                class="bg-secondary rounded-circle"
+                style="width: 10px; height: 10px; display: inline-block"
+              ></span>
+            </div>
+
+            <p class="text-end mt-2 mb-0 text-muted">Page 1 of 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/scripts/header.js"></script>
+    <script>
+      loadHeader("../");
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/scripts/contrato-assinatura.js"></script>
+  </body>
+</html>

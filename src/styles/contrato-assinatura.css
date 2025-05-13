@@ -1,0 +1,121 @@
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2px;
+  font-size: 1.05rem;
+}
+
+.documento {
+  width: 100%;
+}
+
+.documento,
+.form-assinatura {
+  width: 100%;
+  min-height: 857px;
+  padding: 2rem;
+  background-color: var(--color-gray-1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-assinatura {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.texto-contrato h5 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.documento h5,
+.form-assinatura h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.texto-contrato {
+  background-color: var(--color-gray-1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.texto-contrato p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.assinatura-preview {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 100px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 25px;
+  background-color: var(--color-white);
+}
+
+.bottom-form {
+  width: 100%;
+}
+
+.assinatura-input {
+  margin-top: 1rem;
+}
+
+/* Botão "Voltar" */
+.btn-voltar {
+  color: #333;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-voltar:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-custom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.pagination-custom span {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pagination-custom span.active {
+  background-color: #ff7a00;
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}

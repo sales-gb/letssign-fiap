@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  display: flex;
+  justify-content: center;
+}
+
+.page-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.top-container {
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo-lets {
+  width: 120px;
+  margin-bottom: 24px;
+  display: block;
+  margin-left: 0;
+}
+
+.file-preview img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.email-content {
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+.email-content .text-link {
+  color: #6c47ff;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.footer {
+  font-size: 13px;
+  color: #777;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.footer a {
+  color: #6c47ff;
+  text-decoration: none;
+}
+
+.footer-logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.final-msg {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}

@@ -1,0 +1,97 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 400px);
+  gap: var(--spacing-unit);
+  align-items: start;
+}
+
+.cert-info-container {
+  background-color: var(--color-gray-1);
+  padding: var(--spacing-unit);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-unit);
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.signer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signer h5 {
+  font-weight: var(--font-weight-bold);
+}
+
+.signer p,
+.signer .timestamps p {
+  margin-bottom: 0.25rem;
+}
+
+.timestamps-container {
+  padding-top: 2rem;
+  width: 100%;
+  display: grid;
+  font-size: var(--font-size-sm);
+}
+
+.timestamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-signatures {
+  background-color: var(--color-gray-1);
+  padding: var(--spacing-unit);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-unit);
+}
+
+.signature-box {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-2);
+  padding: var(--spacing-unit);
+  border-radius: 4px;
+}
+
+.signature-preview {
+  background: #fafafa;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-2);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.sig-text {
+  display: block;
+  font-family: "Brush Script MT", cursive;
+  font-size: var(--font-size-xl);
+}
+
+.id-doc {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-3);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .signer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-unit);
+  }
+  .timestamp {
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+    align-items: start;
+    margin-top: var(--spacing-unit);
+  }
+}
